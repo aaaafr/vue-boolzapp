@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #019789 0%, #009688 15.4%, #B7D0CB 15.4%, #D8DBD7 15.4%, #D8DBD7 15.41%);
+    height: 100vh;
+}
+
+
+img {
+    width: 40px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.sidebar {
+    float:left;
+    background-color: transparent;
+    height:80%;
+    width:400px;
+    margin-top: 11px;
+    margin-bottom:20px;
+}
+
+.utente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding:22px
+}
+
+.pic{
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+}
+
+.icons i {
+    padding: 10px;
+}
+
+.notifiche {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8EDAFC;
+}
+
+.notifiche:hover{
+    background-color: transparent;
+}
+
+.notifiche i {
+    border-radius: 100%;
+    padding: 15px;
+    background-color: white;
+    color:#8EDAFC;
+}
+
+.link {
+    padding: 20px;
+}
+
+
+.link p{
+    margin:0;
+}
+
+.search{
+    background-color: #EAEAEA;
+    padding:20px;
+}
+
+.text {
+    background-color: white
+}
+
+.text i {
+    color: #B6B9BB;
+    padding: 10px;
+}
+
+.text input {
+    width: 80%;
+    margin-left: 10px;
+    border-style: none;
+}
+
+#app{
+    overflow: auto;
+    height: 500px;
+}
+
+.utenti{
+    background-color: white;
+}
+
+.utenti:hover{
+    background-color: transparent;
+}
+
+ul{
+    margin-bottom:0;
+    list-style: none;  
+}
+
+
+
+.utenti li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.content {
+    width: calc(100% - 400px);
+    height: 100%;
+    background-color: black;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 11px;
+    margin-bottom:20px;
+}
+
+.utentiCorrenti {
+    background-color: black;
+    padding: 15px;
+
+}
+
+.chat {
+    background-image: url(../img/mine.jpg);
+    height: 600px;
+    
+}
+
+.write {
+    padding: 18px
+}
+
+
