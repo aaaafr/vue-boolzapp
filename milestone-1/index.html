@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div id="app">
-                    <ul class="utenti" v-for="(utente) in utenti">
+                    <ul class="utenti" v-for="(utente,index) in utenti">
                         <li @click="utenteCorrente(utente)">
                             <img :src="utente.avatar" alt="">
                             <p>{{utente.name}}</p>
@@ -49,10 +49,12 @@
 
             </div>
             <div class="content  clearfix">
-                <div class="utentiCorrenti" v-if="utentiCorrente" v-for="(utenteCorrente, index) in utentiCorrente">
-                    <img :src="utentiCorrente[index]" alt="">
-                    <p>{{utentiCorrente.name}}</p>
-                </div>
+                <ul class="utentiCorrente">
+                    <li>                    
+                        <img :src alt="">
+                        <p></p>
+                    </li>
+                </ul>
                 <div class="chat">
                     
                 </div>

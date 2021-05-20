@@ -135,8 +135,8 @@ ul{
     margin-bottom:20px;
 }
 
-.utentiCorrenti {
-    background-color: black;
+.utentiCorrente {
+    background-color: #EAEAEA;
     padding: 15px;
 
 }
@@ -148,7 +148,8 @@ ul{
 }
 
 .write {
-    padding: 18px
+    padding: 18px;
+    background-color: #F3EEEA;
 }
 
 

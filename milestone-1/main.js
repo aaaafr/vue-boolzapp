@@ -176,14 +176,16 @@ const app = new Vue({
                 ],
             },
         ],
-        utentiCorrente: [
+        utentiCorrente: [ 
+
                 
         ],
     },
     methods: {
         utenteCorrente(utente){
-            console.log(this.utentiCorrente.push(utente.name, utente.avatar))
-            console.log(this.utentiCorrente)
+            console.log(utente.name, utente.avatar);
+            console.log(this.utentiCorrente.push(utente.name, utente.avatar));
+            console.log(this.utentiCorrente);
 
         }
 
