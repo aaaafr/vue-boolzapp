@@ -22,6 +22,7 @@
 const app = new Vue({
     el: "#app",
     data: { 
+        utentiCorrenti: 0,
         utenti: [
             {
                 name: 'Michele',
@@ -176,18 +177,14 @@ const app = new Vue({
                 ],
             },
         ],
-        utentiCorrente: [ 
-
-                
-        ],
     },
     methods: {
-        utenteCorrente(utente){
-            console.log(utente.name, utente.avatar);
-            console.log(this.utentiCorrente.push(utente.name, utente.avatar));
-            console.log(this.utentiCorrente);
+        openChat(index){
+            console.log(index)
+            return this.utentiCorrenti = index
+        },
 
-        }
+
 
     }
 

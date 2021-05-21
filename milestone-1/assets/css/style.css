@@ -97,11 +97,11 @@ img {
     border-style: none;
 }
 
-#app{
+#lista_utenti {
     overflow: auto;
     height: 500px;
-}
 
+}
 .utenti{
     background-color: white;
 }
@@ -135,10 +135,16 @@ ul{
     margin-bottom:20px;
 }
 
-.utentiCorrente {
+.utentiCorrenti {
     background-color: #EAEAEA;
-    padding: 15px;
+    padding:22px;
+    border-left: 1px solid gray;
+}
 
+
+.utentiCorrenti li {
+    display: flex;
+    align-items: center;
 }
 
 .chat {
