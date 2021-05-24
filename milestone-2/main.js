@@ -187,11 +187,6 @@ const app = new Vue({
             return this.utentiCorrenti = index
         },
 
-        addMex(){
-            console.log(this.newMex);
-            
-        }
-
 
     }
 
