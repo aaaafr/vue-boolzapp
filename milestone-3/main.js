@@ -23,9 +23,7 @@ const app = new Vue({
     el: "#app",
     data: { 
         utentiCorrenti: 0,
-        newMex: [
-            ""
-        ],
+        newMex: "",
         utenti: [
             {
                 name: 'Michele',
@@ -188,12 +186,28 @@ const app = new Vue({
         },
 
         addMex(){
-            console.log(this.newMex);
-            
-        }
+            let utenteAttivo = this.utenti[this.utentiCorrenti]
+            let messaggio = {                        
+                date: new Date().toLocaleString(),
+                text: this.newMex,
+                status: 'sent'
+            }
+            utenteAttivo.messages.push(messaggio)
+            this.newMex = "" 
+            setTimeout(() => {
+                let messaggioRicevuto = {
+                    date: new Date().toLocaleString(),
+                    text: "Come stai?",
+                    status: 'received',
+
+                }
+                utenteAttivo.messages.push(messaggioRicevuto)
+        
+            }, 1000);
+        } 
 
 
-    }
+    },
 
 
 });
