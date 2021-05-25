@@ -34,11 +34,11 @@
                 <div class="search">
                     <div class="text">
                         <i class="fas fa-search"></i>
-                        <input type="text" name="" id="" placeholder="Cerca o inizia una nuova chat">
+                        <input  type="text" placeholder="Cerca o inizia una nuova chat" v-model="searches" @keyup="searchContact" >
                     </div>
                 </div>
                 <div id="lista_utenti">
-                    <ul class="utenti" v-for="(utente,index) in utenti" @click="openChat(index)"> 
+                    <ul class="utenti" v-for="(utente,index) in utenti" v-if="utente.visible" @click="openChat(index)" > 
                         <li>
                             <img :src="utente.avatar" alt="">
                             <p>{{utente.name}}</p>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="write">
                         <i class="far fa-smile"></i>
-                        <input  type="text" v-model="newMex" v-on:keyup.enter="addMex()">
+                        <input type="text" v-model="newMex" @keyup.enter="addMex">
                         <i class="fas fa-microphone"></i>
                     </div>
 
