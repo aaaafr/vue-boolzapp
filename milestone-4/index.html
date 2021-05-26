@@ -50,8 +50,16 @@
                 <div class="mex">
                     <ul class="utentiCorrenti">
                         <li>
-                            <img :src="utenti[utentiCorrenti].avatar" alt="">
-                            <p>{{utenti[utentiCorrenti].name}}</p>
+                             <img :src="utenti[utentiCorrenti].avatar" alt="">
+                            <div id="messaggio">
+                                <p>{{utenti[utentiCorrenti].name}}</p>
+                                <p id="clear">Ultimo accesso oggi alle</p>
+                            </div>
+                            <div class="right">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
                             
                         </li>
                     </ul>
@@ -66,7 +74,7 @@
                     </div>
                     <div class="write">
                         <i class="far fa-smile"></i>
-                        <input type="text" v-model="newMex" @keyup.enter="addMex">
+                        <input id="text" type="text" v-model="newMex" @keyup.enter="addMex">
                         <i class="fas fa-microphone"></i>
                     </div>
 
